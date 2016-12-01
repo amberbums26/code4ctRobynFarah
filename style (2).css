@@ -1,0 +1,24 @@
+  blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+    
+.heads{
+    text-align: center;
+    padding-top: 2em;
+}
+.parm{
+    padding-left: 2em;
+}
+.navv{
+    height:4em;
+}
+#letter{
+    text-align: left;
+    padding: 3em 5em 3em 5.5em;
+}
+

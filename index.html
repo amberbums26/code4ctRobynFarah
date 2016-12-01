@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<title>Robyn Farah</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom:-6px;opacity:0.8;cursor:pointer}
+.w3-third img:hover{opacity:1}
+
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-white w3-animate-left w3-center w3-text-grey w3-collapse w3-top" style="z-index:3;width:300px;font-weight:bold" id="mySidenav"><br>
+  <h3 class="w3-padding-64"><b>ROBYN<br>FARAH</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding w3-hide-large">CLOSE</a>
+  <a href="#gallery" onclick="w3_close()" class="w3-padding">GALLERY</a> 
+  <a href="#about" onclick="w3_close()" class="w3-padding">BIOGRAPHY</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-padding">CONTACT DETAILS</a>
+  <a href="#why" onclick="w3_close()" class="w3-padding">WHY SHE'S AN INSPIRATION</a> 
+  <a href="#letter" onclick="w3_close()" class="w3-padding">LETTER TO KRS</a>
+  <a href="#bio" onclick="w3_close()" class="w3-padding">ABOUT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16 navv">
+        <a href="http://www.kat-o.net/"><img id="kat" src="images/kat-o.png"></a>
+  <span class="w3-left w3-padding">Robyn Farah</span>
+  <a href="javascript:void(0)" class="w3-right w3-btn w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+    
+    <div id="about">
+        <h3 class="heads">Biography</h3>
+        <p class="parm">Robyn Farah is the founder of KAT-O, a hardware/technology prototyping company, which hosts #TechTalkCPT. She is the founder of Cape Town’s electronics and maker communities Arduino Cape Town and the Modern Alchemists and recently became a partner in Curiosity Campus.</p>
+        
+<p class="parm">With a background in instrumental and electronic composition, she got into electronics due to her aim is to make everyday objects come to life with sound, allowing the manipulation, interaction and/or processing of sound more accessible to the public. This lead her to complete her Master’s in Sonic Art from the Sonic Arts Research Centre (SARC) at Queen’s University in Belfast.
+</p>
+    
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div id="vids" style="text-align:center;">
+    <object width="420" height="315" data="https://www.youtube.com/v/GciftUFN-JM"></object>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+  <!-- Photo grid -->
+  <div class="w3-row" id="gallery">
+    <div class="w3-third">
+      <img src="images/farah.jpg" style="width:100%; height:10em; " onclick="onClick(this)" alt="Getting creative with makeup">
+      <img src="images/her.jpg" style="width:100%;  height:10em;" onclick="onClick(this)" alt="">
+      <img src="images/hqde.jpg" style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Umbrella: the further you open the umbrella the louder the rain drop sounds
+">
+        <img src="images/maxrest.jpg" style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Interview with News24">
+    </div>
+
+    <div class="w3-third">
+      <img src="images/hqdlt.jpg" style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Belloon project. Creating bell tunes with the pull of a helium balloon">
+      <img src="images/max.jpg" style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Robyn Farah on News24">
+      <img src="images/Kat-O.jpg" style="width:100% ; height:10em;" onclick="onClick(this)" alt="Delivering one of her many speeches">
+        <img src="images/maxrt.jpg" style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Robyn Farah talking at TED-X AIMS">
+    </div>
+    
+    <div class="w3-third">
+      <img src="images/RFarah.jpg"style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Robyn Farah">
+      <img src="images/Robyn.jpg" style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Robyn Farah">
+      <img src="images/preview.jpg" style="width:100%;  height:10em;" onclick="onClick(this)" alt="Tech Talks hosted by KAT-O">
+         <img src="images/illu.png" style="width:100% ;  height:10em;" onclick="onClick(this)" alt="Arduino">
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+    
+    <div id="quotes">
+        <h4 class="heads"><b>Inspirational Quotes</b></h4>
+    <blockquote><p>I have always done what I love, even if that meant doing it during lunch breaks, and after hours while working a nine-to-five. If you do what you love it doesn’t feel like work, but passion and a need that must be fulfilled.
+</p></blockquote>
+        <blockquote><p>My passion is pushing hardware and tech growth to better Africa.</p></blockquote>
+        <blockquote><p>My aim is to connect inventors around the world, to show them that they can build their future.
+</p></blockquote>
+    </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32">
+    <h4 id="bio"><b>Robyn Farah</b></h4>
+    <img src="images/Robyn.jpg" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <p>Robyn Farah is committed to pushing hardware and tech growth to better Africa. “I have always done what I love, even if that meant doing it during lunch breaks, and after hours while working a nine-to-five. If you do what you love it doesn’t feel like work, but passion and a need that must be fulfilled.”</p>
+
+<p>While her main business, KAT-O, builds hardware prototypes for clients, Farah also started and runs two of South Africa’s most active tech/maker communities: Arduino Cape Town and Modern Alchemists.</p>
+
+<p>“I started ArduinoCT a month after returning to SA in 2012 after meeting an awesome group of people at the Science Hack day who wanted the same thing. They helped start it, but I continued to run it. I was then approached by Niel Bekker to find teachers for Arduino courses at Curiosity Campus, after all the people I suggested let him down. I felt so awful I agreed to teach for him and a year-and-a-half later we become business partners. ”</p>
+
+<p>She recently started Women in Tech Cape Town and is also a partner in Curiosity Campus, which teaches people all sorts of tech skills from Python to building and coding your own robot and creating VR (virtual reality) environments.</p>
+
+<p>In 2015, she was invited to be a guest lecturer at MIT and to attend the World Maker Faire in New York.</p>
+
+<p>“My main interests are the future and how tech can improve all fields, from biohacking to renewable energy,” elaborates Farah. “To me makers are important, because there is a sense of unity and collaboration in a non-judgemental space where anyone is free not just to dream but to see their dreams come to life. We need to make more, collaborate more, show off our work and we need to make a bigger effort to bridge all divides, to include women and people from less advantaged and different backgrounds than our own.</p>
+    
+<p>“Connecting South Africa and Africa and really, really pushing to put us on the tech scene globally is vital. This means making people around the world aware of the ground-breaking stuff we are achieving right here at home.” — Tiana Cline</p>
+      </p>
+      <br  id="why">
+      <br>
+      <hr>
+      <h4 class="heads" >Why She's an Inspiration</h4>
+      <p>Robyn Farah can be seen as an inspiration to all young South Africans and especially the young girls of South Africa because not only is she the founder of a very successful company, Kat-O, but she is also a very innovative woman. Her commitment to pushing hardware and tech growth to better Africa is one splendid commitment because her work is serving Africa for the better.</p>
+
+<p>She also runs two of South Africa’s most active tech/maker communities, Arduino Cape Town and Modern Alchemists. Her success is far more than Kat-O, Aruino Cape Town and Modern Alchemists as she also recently started Women in Tech Cape Town</p> 
+
+
+<p>Robyn Farah is a great influence in South Africa. Her successes have been very beneficial to South Africa and Africa as well. She is someone to look up to and is a good role model for many young Africans. She should be given more recognition for what she has done in and for Africa. With her Master’s in Sonic Art she stopped at nothing to move forward with technology. Her great and innovative ideas to interact sounds with the public has become so successful that Arduino Cape Town and Modern Alchemists has become two of South Africa’s  most active tech/ maker communities</p>
+    
+   <p> Women In Tech CPT is a great way for young girls and women interested in or working in the tech industry to interact with each other and learn new things from each other. It may be regarded as a way to celebrate women’s victories in the male-dominated fields. Her brilliant work does not only benefit the youth and the women of South Africa but everyone and anyone that has the knowledge of Ms Farah and any of her projects and company. She isn’t at all the typical intimidating, stern business woman but she is a kind and warm hearted young woman and a unsung hero of South Africa.
+</p>
+      <p>Written By: Naledi Sinandile</p>
+      <p><i>mail: robynfarah@gmail.com</i></p>
+      <hr>
+        <h4 class="heads" id="letter">Letter of Thanks to KRS</h4>
+    
+    <p>We would like to thank you for hosting us for a week at your company. We are very happy to have had the chance to work in your company and to work with our three coaches that have helped us a lot with what we never understood.</p>
+
+<p>We are deeply grateful for the experience of working in an office environment and we would like to thank everyone who works for KRS for the wonderful accommodation and the never ending support and help. The welcoming environment is splendid and everyone greets and treats us with a cheery smile. Even the ground staff is very friendly and happy to see us everyday. They never treat us as if we do not belong here and they treat us as young ladies instead of teenagers.</p>
+
+<p>Working at KRS is an amazing experience and the atmosphere is very welcoming and comfortable. Thank you KRS for the amazing experience and for your time to host us.</p>
+
+        <p>Yours sincerely</p>
+    <p>Naledi Sinandile and Amber Mulder</p>
+    
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>OFFICE</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9363.951400940203!2d18.43450058554483!3d-33.92423238855205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc677d1a8f82b3%3A0xcf2e5b0aa867d13f!2s27+Caledon+St%2C+Zonnebloem%2C+Cape+Town%2C+7925!5e0!3m2!1sen!2sza!4v1480505810890" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>      
+      </div>
+   
+      <div class="w3-third">
+        <h3>INTERVIEWS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="images/kat-o.png" class="w3-left w3-margin-right" style="width:50px">
+            <span><a href="https://youtu.be/u5LjjS8tjA0">News24</a></span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="images/kat-o.png" class="w3-left w3-margin-right" style="width:50px">
+           <span><a href="https://youtu.be/rwF0QSktKBs">Smart monkey</a></span>
+          </li> 
+        </ul>
+      </div>
+        <div id="contact">
+            <ul id="icons" style="list-style: none;">
+                <li><a href="http://www.twitter.com/RobynFarah">
+                    <img src="images/twitter.png"</a></li>
+        <li><a href="http://za.linkedin.com/pub/robyn-farah/33/608/200"><img src="images/linkedin.png"</a></li>
+        <li><a href="https://plus.google.com/u/1/+RobynFarah/posts"><img src="images/g+.png"</a></li>
+        <li><a href= "https://www.facebook.com/robyn.farah"><img src="images/facebook.png"</a></li>
+
+            </ul>
+        
+        </div>
+
+      <div class="w3-third">
+  </footer>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
